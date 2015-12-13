@@ -12,7 +12,7 @@ Solution - LetsEncryptServlet that handles that for you!
 
 # Instruction
 
-1. Download `gae-letsencrypt.jar`
+1. Download [gae-letsencrypt.jar](https://github.com/kirillgroshkov/gae-letsencrypt/raw/master/dist/gae-letsencrypt.jar)
 2. Put it into `WEB-INF/lib`
 3. Add servlet to your `web.xml`:
 
