@@ -1,0 +1,25 @@
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+  <info organisation="acme" module="gae-letsencrypt"/>
+  <configurations>
+    <conf name="compile"/>
+    <conf name="test"/>
+  </configurations>
+  <dependencies>
+    <!-- compile -->
+    <dependency org="javax.servlet" name="servlet-api" rev="2.5" conf="compile->default"/>
+    <dependency org="org.projectlombok" name="lombok" rev="1.16.6" conf="compile->default"/>
+
+    <!-- test -->
+    <dependency org="junit" name="junit" rev="4.12" conf="test->default"/>
+    <dependency org="org.mockito" name="mockito-core" rev="2.0.7-beta" conf="test->default"/>
+
+    <dependency org="org.slf4j" name="slf4j-jdk14" rev="1.7.12" conf="test->default"/>
+
+    <dependency org="org.eclipse.jetty" name="jetty-server" rev="9.0.3.v20130506" conf="test->default"/>
+    <dependency org="org.eclipse.jetty" name="jetty-webapp" rev="9.0.3.v20130506" conf="test->default"/>
+
+    <dependency org="org.glassfish.jersey.containers" name="jersey-container-servlet-core" rev="2.22" conf="test->default"/>
+
+  </dependencies>
+</ivy-module>

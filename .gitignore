@@ -1,0 +1,10 @@
+
+/.idea
+/*.iml
+/out
+
+/build
+/lib
+
+/war/WEB-INF/classes
+/war/WEB-INF/lib
