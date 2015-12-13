@@ -16,18 +16,20 @@ Solution - LetsEncryptServlet that handles that for you!
 2. Put it into `WEB-INF/lib`
 3. Add servlet to your `web.xml`:
 
-    <servlet>
-        <servlet-name>letsencrypt</servlet-name>
-        <servlet-class>letsencrypt.LetsEncryptServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>letsencrypt</servlet-name>
-        <url-pattern>/.well-known/acme-challenge/*</url-pattern>
-    </servlet-mapping>
+```
+<servlet>
+    <servlet-name>letsencrypt</servlet-name>
+    <servlet-class>letsencrypt.LetsEncryptServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>letsencrypt</servlet-name>
+    <url-pattern>/.well-known/acme-challenge/*</url-pattern>
+</servlet-mapping>
+```
 
 4. Put your challenge/response file into `WEB-INF/letsencrypt/` folder
 5. Profit!
-
+    
 Your app will be able to pass LetsEncrypt validation request!
 
 # Development
